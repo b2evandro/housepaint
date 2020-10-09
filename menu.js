@@ -12,16 +12,6 @@ function show_option() {
     menuSection.classList.toggle("on", show)
     show = !show;
 
-    $('.nav a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        var id = $(this).attr('href'),
-            targetOffset = $(id).offset().top;
-
-        $('html, body').animate({
-            scrollTop: targetOffset - 100
-        }, 500);
-    });
-
     console.log(show)
 }
 
